@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="game-title">TETRIS</div>
+            <div class="score-box">
+                <div class="score-label">SCORE</div>
+                <div class="score-value" id="score">0</div>
+            </div>
+            <div class="instructions">
+                <h2>HOW TO PLAY</h2>
+                <ul>
+                    <li><span class="key">←</span><span class="key">→</span> Move Block</li>
+                    <li><span class="key">↑</span> Rotate</li>
+                    <li><span class="key">↓</span> Drop</li>
+                </ul>
+                <div class="tip">Clear lines to score!</div>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script type="module" src="dist/game.js"></script>
+</body>
+</html>
